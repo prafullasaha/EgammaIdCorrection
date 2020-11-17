@@ -1,0 +1,34 @@
+# Editors temp files
+*.swp
+*~
+
+# SCRAM business
+__init__.py
+*.pyc
+
+# CRAB3 stuff
+crab_*
+crabConfig_*
+
+Condor_*
+condor_*
+# ROOT-related files
+*.root
+*_cc.d
+*_cc.so
+*_C.d
+*_C.so
+*\#*
+.\#*
+AutoDict_*
+*.gz
+*.xml
+# Other temp files
+#*.txt
+*.log
+*.sub
+*.png
+*.pdf
+
+# This is a symlink created by setup.sh
+#DataFormats/src/classes_def.xml

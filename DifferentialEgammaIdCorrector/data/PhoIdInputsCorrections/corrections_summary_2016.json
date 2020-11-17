@@ -1,0 +1,270 @@
+{
+ "isolations": {
+  "phoIso": {
+   "EE": {
+    "peak2tail": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := userFloat(\"peak2tail_rnd\")"
+     ], 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalTailRegressor_EE_phoIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/data_clf_p2t_EE_phoIso.xml", 
+     "weights_mc": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/mc_clf_p2t_EE_phoIso.xml", 
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho"
+     ]
+    }, 
+    "morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfPhoIso03"
+     ], 
+     "scale": 0.08596048057765085, 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EE_phoIso.xml", 
+     "center": -0.012660368261709964
+    }
+   }, 
+   "EB": {
+    "peak2tail": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := userFloat(\"peak2tail_rnd\")"
+     ], 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalTailRegressor_EB_phoIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/data_clf_p2t_EB_phoIso.xml", 
+     "weights_mc": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/mc_clf_p2t_EB_phoIso.xml", 
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho"
+     ]
+    }, 
+    "morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfPhoIso03"
+     ], 
+     "scale": 0.09350770844957858, 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EB_phoIso.xml", 
+     "center": 0.039768874381154895
+    }
+   }
+  }, 
+  "chIso": {
+   "EE": {
+    "chIso_peak2tail": {
+     "variables": [
+	 "f0 := pt", 
+	 "f1 := superCluster.eta", 
+	 "f2 := phi", 
+	 "f3 := global.rho", 
+	 "f4 := pfChgIsoWrtWorstVtx03",
+	 "f5 := userFloat(\"peak2tail_chIso_rnd\")"
+     ], 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalTailRegressor_EE_chIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/data_clf_3Cat_EE_chIso_chIsoWorst.xml", 
+     "weights_mc": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/mc_clf_3Cat_EE_chIso_chIsoWorst.xml", 
+     "variables": [
+	 "f0 := pt", 
+	 "f1 := superCluster.eta", 
+	 "f2 := phi", 
+	 "f3 := global.rho"
+     ]
+    }, 
+    "chIsoWorst_peak2tail": {
+     "variables": [
+	 "f0 := pt", 
+	 "f1 := superCluster.eta", 
+	 "f2 := phi", 
+	 "f3 := global.rho", 
+	 "f4 := pfChgIsoWrtChosenVtx03",
+	 "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"
+     ], 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalTailRegressor_EE_chIsoWorst.xml"
+    }, 
+    "chIsoWorst_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.07908877024409315, 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EE_chIsoWorst.xml", 
+     "center": -0.016709346023939642
+    }, 
+    "chIso_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.09449158290398274, 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EE_chIso.xml", 
+     "center": 0.005233862600715372
+    }
+   }, 
+   "EB": {
+    "chIso_peak2tail": {
+     "variables": [
+	 "f0 := pt", 
+	 "f1 := superCluster.eta", 
+	 "f2 := phi", 
+	 "f3 := global.rho", 
+	 "f4 := pfChgIsoWrtWorstVtx03",
+	 "f5 := userFloat(\"peak2tail_chIso_rnd\")"
+     ], 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalTailRegressor_EB_chIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/data_clf_3Cat_EB_chIso_chIsoWorst.xml", 
+     "weights_mc": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/mc_clf_3Cat_EB_chIso_chIsoWorst.xml", 
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho"
+     ]
+    }, 
+    "chIsoWorst_peak2tail": {
+     "variables": [
+	 "f0 := pt", 
+	 "f1 := superCluster.eta", 
+	 "f2 := phi", 
+	 "f3 := global.rho", 
+	 "f4 := pfChgIsoWrtChosenVtx03",
+	 "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"
+     ], 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalTailRegressor_EB_chIsoWorst.xml"
+    }, 
+    "chIsoWorst_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.05524731145218942, 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EB_chIsoWorst.xml", 
+     "center": 0.003043560613187335
+    }, 
+    "chIso_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.06188532145612949, 
+     "weights": "$CMSSW_BASE/src/EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EB_chIso.xml", 
+     "center": 0.02015489488479011
+    }
+   }
+  }
+ }, 
+ "shower_shapes": {
+  "sieie": {
+   "EE": {
+    "scale": 0.00047618253683114065, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EE_sieie.xml", 
+    "center": 0.0003225000376058697
+   }, 
+   "EB": {
+    "scale": 0.0001104662098613408, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EB_sieie.xml", 
+    "center": -3.3204630331623054e-05
+   }
+  }, 
+  "etaWidth": {
+   "EE": {
+    "scale": 0.000527115361936753, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EE_etaWidth.xml", 
+    "center": 0.00032721686342924994
+   }, 
+   "EB": {
+    "scale": 0.0003420906834020758, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EB_etaWidth.xml", 
+    "center": -1.2947742904550509e-05
+   }
+  }, 
+  "r9": {
+   "EE": {
+    "scale": 0.010253359666186235, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EE_r9.xml", 
+    "center": -0.0031073467744174854
+   }, 
+   "EB": {
+    "scale": 0.00915591682273384, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EB_r9.xml", 
+    "center": 0.00042335154161760036
+   }
+  }, 
+  "phiWidth": {
+   "EE": {
+    "scale": 0.00262391873289608, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EE_phiWidth.xml", 
+    "center": 0.0009113112561151201
+   }, 
+   "EB": {
+    "scale": 0.0025889840810865723, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EB_phiWidth.xml", 
+    "center": 0.0011585117927925426
+   }
+  }, 
+  "sieip": {
+   "EE": {
+    "scale": 2.2162202063046954e-05, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EE_sieip.xml", 
+    "center": -9.087623072804566e-06
+   }, 
+   "EB": {
+    "scale": 9.256491692147542e-07, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EB_sieip.xml", 
+    "center": -3.2280634187410214e-08
+   }
+  }, 
+  "s4": {
+   "EE": {
+    "scale": 0.011291341541304956, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EE_s4.xml", 
+    "center": -0.0049337720663549245
+   }, 
+   "EB": {
+    "scale": 0.007630080763117303, 
+    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2016/weights_finalRegressor_EB_s4.xml", 
+    "center": 0.00038370660197839523
+   }
+  }
+ }
+}

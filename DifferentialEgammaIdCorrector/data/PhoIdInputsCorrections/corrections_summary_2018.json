@@ -1,0 +1,270 @@
+{
+ "isolations": {
+  "phoIso": {
+   "EE": {
+    "peak2tail": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := userFloat(\"peak2tail_rnd\")"
+     ], 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalTailRegressor_EE_phoIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/data_clf_p2t_EE_phoIso.xml", 
+     "weights_mc": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/mc_clf_p2t_EE_phoIso.xml", 
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho"
+     ]
+    }, 
+    "morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfPhoIso03"
+     ], 
+     "scale": 0.06640579530911996, 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EE_phoIso.xml", 
+     "center": 0.005250037356742843
+    }
+   }, 
+   "EB": {
+    "peak2tail": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := userFloat(\"peak2tail_rnd\")"
+     ], 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalTailRegressor_EB_phoIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/data_clf_p2t_EB_phoIso.xml", 
+     "weights_mc": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/mc_clf_p2t_EB_phoIso.xml", 
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho"
+     ]
+    }, 
+    "morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfPhoIso03"
+     ], 
+     "scale": 0.12040089375899635, 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EB_phoIso.xml", 
+     "center": 0.07988597084627963
+    }
+   }
+  }, 
+  "chIso": {
+   "EE": {
+    "chIso_peak2tail": {
+     "variables": [
+	 "f0 := pt", 
+	 "f1 := superCluster.eta", 
+	 "f2 := phi", 
+	 "f3 := global.rho", 
+	 "f4 := pfChgIsoWrtWorstVtx03",
+	 "f5 := userFloat(\"peak2tail_chIso_rnd\")"
+     ], 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalTailRegressor_EE_chIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/data_clf_3Cat_EE_chIso_chIsoWorst.xml", 
+     "weights_mc": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/mc_clf_3Cat_EE_chIso_chIsoWorst.xml", 
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho"
+     ]
+    }, 
+    "chIsoWorst_peak2tail": {
+     "variables": [
+	 "f0 := pt", 
+	 "f1 := superCluster.eta", 
+	 "f2 := phi", 
+	 "f3 := global.rho", 
+	 "f4 := pfChgIsoWrtChosenVtx03",
+	 "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"
+     ], 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalTailRegressor_EE_chIsoWorst.xml"
+    }, 
+    "chIsoWorst_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.07549508562988608, 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EE_chIsoWorst.xml", 
+     "center": 0.02261090428387391
+    }, 
+    "chIso_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.07311271907865564, 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EE_chIso.xml", 
+     "center": 0.015334704146744094
+    }
+   }, 
+   "EB": {
+    "chIso_peak2tail": {
+     "variables": [
+	 "f0 := pt", 
+	 "f1 := superCluster.eta", 
+	 "f2 := phi", 
+	 "f3 := global.rho", 
+	 "f4 := pfChgIsoWrtWorstVtx03",
+	 "f5 := userFloat(\"peak2tail_chIso_rnd\")"
+     ], 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalTailRegressor_EB_chIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/data_clf_3Cat_EB_chIso_chIsoWorst.xml", 
+     "weights_mc": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/mc_clf_3Cat_EB_chIso_chIsoWorst.xml", 
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho"
+     ]
+    }, 
+    "chIsoWorst_peak2tail": {
+     "variables": [
+	 "f0 := pt", 
+	 "f1 := superCluster.eta", 
+	 "f2 := phi", 
+	 "f3 := global.rho", 
+	 "f4 := pfChgIsoWrtChosenVtx03",
+	 "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"
+     ], 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalTailRegressor_EB_chIsoWorst.xml"
+    }, 
+    "chIsoWorst_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.09610418976923851, 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EB_chIsoWorst.xml", 
+     "center": 0.12885914702326673
+    }, 
+    "chIso_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.09683323426563749, 
+     "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EB_chIso.xml", 
+     "center": 0.05272420382216636
+    }
+   }
+  }
+ }, 
+ "shower_shapes": {
+  "sieie": {
+   "EE": {
+    "scale": 0.00047765361707808197, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EE_sieie.xml", 
+    "center": 0.00033791164231124736
+   }, 
+   "EB": {
+    "scale": 9.447610685463367e-05, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EB_sieie.xml", 
+    "center": -1.338798598885145e-05
+   }
+  }, 
+  "etaWidth": {
+   "EE": {
+    "scale": 0.000547223078659973, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EE_etaWidth.xml", 
+    "center": 0.0004153295725724329
+   }, 
+   "EB": {
+    "scale": 0.0003381714524934305, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EB_etaWidth.xml", 
+    "center": -3.983385867640729e-06
+   }
+  }, 
+  "r9": {
+   "EE": {
+    "scale": 0.014926955853444557, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EE_r9.xml", 
+    "center": -0.00869450644995956
+   }, 
+   "EB": {
+    "scale": 0.010041591228904162, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EB_r9.xml", 
+    "center": -0.0034957641959179053
+   }
+  }, 
+  "phiWidth": {
+   "EE": {
+    "scale": 0.002128917659751403, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EE_phiWidth.xml", 
+    "center": 0.0012794900435001803
+   }, 
+   "EB": {
+    "scale": 0.0019421618661353145, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EB_phiWidth.xml", 
+    "center": 0.0007529814748217659
+   }
+  }, 
+  "sieip": {
+   "EE": {
+    "scale": 1.976322925152308e-05, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EE_sieip.xml", 
+    "center": -1.1049352291879044e-05
+   }, 
+   "EB": {
+    "scale": 1.025769961188504e-06, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EB_sieip.xml", 
+    "center": -2.1602032511843264e-08
+   }
+  }, 
+  "s4": {
+   "EE": {
+    "scale": 0.014542940630291212, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EE_s4.xml", 
+    "center": -0.011083602033276074
+   }, 
+   "EB": {
+    "scale": 0.00728814761466437, 
+    "weights": "flashgg/Taggers/data/PhoIdInputsCorrections/2018/weights_finalRegressor_EB_s4.xml", 
+    "center": -0.002791432255344395
+   }
+  }
+ }
+}

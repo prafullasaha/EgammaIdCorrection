@@ -1,0 +1,257 @@
+{
+    "shower_shapes" : 
+    {
+        "sieie": {
+            "EE": {
+                "scale": 0.0004952022425841057, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EE_sieie.xml", 
+                "center": 0.000232510955048542
+            }, 
+            "EB": {
+                "scale": 9.584385303930019e-05, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EB_sieie.xml", 
+                "center": -5.1717290076120845e-05
+            }
+        }, 
+        "etaWidth": {
+            "EE": {
+                "scale": 0.0005480486104594688, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EE_etaWidth.xml", 
+                "center": 0.0002232480231738592
+            }, 
+            "EB": {
+                "scale": 0.0003493050480966255, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EB_etaWidth.xml", 
+                "center": -0.00016565428928989791
+            }
+        }, 
+        "r9": {
+            "EE": {
+                "scale": 0.014832657700482338, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EE_r9.xml", 
+                "center": -0.007372621685483638
+            }, 
+            "EB": {
+                "scale": 0.009489495430770628, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EB_r9.xml", 
+                "center": -0.002028252255487417
+            }
+        }, 
+        "phiWidth": {
+            "EE": {
+                "scale": 0.0019464228762895372, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EE_phiWidth.xml", 
+                "center": 0.0009612037536670028
+            }, 
+            "EB": {
+                "scale": 0.002104991113194962, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EB_phiWidth.xml", 
+                "center": 0.0007377486601366596
+            }
+        }, 
+        "sieip": {
+            "EE": {
+                "scale": 1.9968203087899473e-05, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EE_sieip.xml", 
+                "center": -1.1005423958127062e-05
+            }, 
+            "EB": {
+                "scale": 1.0669183816085082e-06, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EB_sieip.xml", 
+                "center": -3.2259631995695154e-08
+            }
+        }, 
+        "s4": {
+            "EE": {
+                "scale": 0.014044106856233973, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EE_s4.xml", 
+                "center": -0.008718535579634146
+            }, 
+            "EB": {
+                "scale": 0.0065310642236871275, 
+                "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EB_s4.xml", 
+                "center": -0.0014767145572411322
+            }
+        }
+    },
+
+    "isolations" :
+    {
+        "phoIso": {
+            "EE": {
+                "peak_tail_clfs" : 
+                {
+                    "weights_data" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/data_clf_p2t_EE_phoIso.xml",
+                    "weights_mc" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/mc_clf_p2t_EE_phoIso.xml",
+                    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho"] 
+                },
+                "peak2tail" :
+                {
+                    "weights" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalTailRegressor_EE_phoIso.xml",
+                    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+                                   "f4 := userFloat(\"peak2tail_rnd\")"]
+                },
+                "morphing" :
+                {
+                    "scale" : 0.0886983137006268, 
+                    "center" : 0.025296074198263616,
+                    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+                                   "f4 := userFloat(\"uncorr_pfPhoIso03\")"],
+                    "weights" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EE_phoIso.xml"
+                }
+            }, 
+            "EB": {
+                "peak_tail_clfs" : 
+                {
+                    "weights_data" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/data_clf_p2t_EB_phoIso.xml",
+                    "weights_mc" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/mc_clf_p2t_EB_phoIso.xml",
+                    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho"] 
+                },
+                "peak2tail" :
+                {
+                    "weights" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalTailRegressor_EB_phoIso.xml",
+                    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+                                   "f4 := userFloat(\"peak2tail_rnd\")"]
+                },
+                "morphing" :
+                {
+                    "scale" : 0.1256188820912958, 
+                    "center" : 0.06895645737583889,
+                    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+                                   "f4 := userFloat(\"uncorr_pfPhoIso03\")"],
+                    "weights" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EB_phoIso.xml"
+                }
+            }
+        },
+        "chIso": {
+            "EE": {	
+		"peak_tail_clfs":
+		{
+		    "weights_data" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/data_clf_3Cat_EE_chIso_chIsoWorst.xml",
+		    "weights_mc" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/mc_clf_3Cat_EE_chIso_chIsoWorst.xml",
+		    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho"]
+		},
+		"chIso_peak2tail":
+		{
+                    "weights" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalTailRegressor_EE_chIso.xml",
+		    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+				   "f4 := pfChgIsoWrtWorstVtx03",
+				   "f5 := userFloat(\"peak2tail_chIso_rnd\")"]
+		},
+                "chIso_morphing":
+		{
+		    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EE_chIso.xml", 
+                    "center": 0.012777520521935815,
+		    "scale": 0.08121688032488544,
+		    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+                                   "f4 := userFloat(\"uncorr_pfChIso03\")",
+				   "f5 := userFloat(\"uncorr_pfChIsoWorst03\")"]
+		},
+		"chIsoWorst_peak2tail":
+		{
+		    "weights" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalTailRegressor_EE_chIsoWorst.xml",
+		    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+                                   "f4 := pfChgIsoWrtChosenVtx03",
+				   "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"]
+		},
+		"chIsoWorst_morphing":
+		{
+		    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EE_chIsoWorst.xml",
+		    "scale": 0.08261618370104969,
+		    "center": -0.0002665169782493232,
+		    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+                                   "f4 := userFloat(\"uncorr_pfChIso03\")",
+				   "f5 := userFloat(\"uncorr_pfChIsoWorst03\")"]
+		}
+            }, 
+            "EB": {
+		"peak_tail_clfs":
+		{
+		    "weights_data": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/data_clf_3Cat_EB_chIso_chIsoWorst.xml",
+		    "weights_mc": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/mc_clf_3Cat_EB_chIso_chIsoWorst.xml",
+		    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho"]
+		},
+                "chIso_peak2tail" :
+		{
+		    "weights" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalTailRegressor_EB_chIso.xml",
+		    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+				   "f4 := pfChgIsoWrtWorstVtx03",
+				   "f5 := userFloat(\"peak2tail_chIso_rnd\")"]
+		},
+                "chIso_morphing" :
+		{
+		    "weights" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EB_chIso.xml",
+		    "scale": 0.07795545910678636,
+		    "center": 0.04056159366893253,
+		    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+				   "f4 := userFloat(\"uncorr_pfChIso03\")",
+				   "f5 := userFloat(\"uncorr_pfChIsoWorst03\")"]
+		},
+		"chIsoWorst_peak2tail":
+		{
+		    "weights" : "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalTailRegressor_EB_chIsoWorst.xml",
+		    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+                                   "f4 := pfChgIsoWrtChosenVtx03",
+				   "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"]
+		},
+		"chIsoWorst_morphing" :
+		{
+		    "weights": "EgammaIdCorrection/DifferentialEgammaIdCorrector/data/PhoIdInputsCorrections/2017/weights_finalRegressor_EB_chIsoWorst.xml",
+		    "scale": 0.09341274835827507,
+		    "center": 0.09945467977615818,
+		    "variables" : ["f0 := pt",
+                                   "f1 := superCluster.eta",
+                                   "f2 := phi",
+                                   "f3 := global.rho",
+                                   "f4 := userFloat(\"uncorr_pfChIso03\")",
+				   "f5 := userFloat(\"uncorr_pfChIsoWorst03\")"]
+		}
+            }
+        }        
+    }
+}
