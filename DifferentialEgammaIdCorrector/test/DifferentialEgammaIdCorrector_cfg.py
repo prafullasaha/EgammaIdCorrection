@@ -13,7 +13,7 @@ process = cms.Process("EgammaIdCorrection")
 
 process.load("FWCore.MessageLogger.MessageLogger_cfi")
 
-process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(10000)
+process.MessageLogger.cerr.FwkReport.reportEvery = cms.untracked.int32(1000)
 process.MessageLogger.cerr = cms.untracked.PSet(threshold = cms.untracked.string("ERROR"))
 
 process.load('Configuration.StandardSequences.GeometryRecoDB_cff')
@@ -55,7 +55,7 @@ process.source = cms.Source("PoolSource",
 #)
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(-1)
+    input = cms.untracked.int32(1000)
 )
 
 process.load("EgammaIdCorrection.DifferentialEgammaIdCorrector.DifferentialEgammaIdCorrector_cfi")
